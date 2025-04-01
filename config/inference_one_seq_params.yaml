@@ -1,7 +1,12 @@
-data_path: "/home/justin/data/contact_data/test_sequence/numpy/lcmlog-2021-02-21-5-short_network_data.npy"
-label_path: "/home/justin/data/contact_data/test_sequence/numpy/lcmlog-2021-02-21-5-short_network_data_label.npy"
-mat_data_path: "/home/justin/data/contact_data/test_sequence/mat/lcmlog-2021-02-21-5-short_network_data.mat"
-model_load_path: "/home/justin/code/deep-contact-estimator/results/0913_auto_contact_best_val_loss.pt"
+# data_path: "/home/justin/data/contact_data/test_sequence/numpy/lcmlog-2021-02-21-5-short_network_data.npy"
+# label_path: "/home/justin/data/contact_data/test_sequence/numpy/lcmlog-2021-02-21-5-short_network_data_label.npy"
+# mat_data_path: "/home/justin/data/contact_data/test_sequence/mat/lcmlog-2021-02-21-5-short_network_data.mat"
+# model_load_path: "/home/justin/code/deep-contact-estimator/results/0913_auto_contact_best_val_loss.pt"
+
+data_path: "/home/zh/data/contact_data/sidewalk/numpy/sidewalk.npy"
+label_path: "/home/zh/data/contact_data/sidewalk/numpy/sidewalk_label.npy"
+mat_data_path: "/home/zh/data/contact_data/sidewalk/mat/sidewalk.mat"
+model_load_path: "/home/zh/data/contact_data/weight/0913_2blocks_best_val_loss.pt"
 
 # data params
 window_size: 150
@@ -12,9 +17,11 @@ batch_size: 1
 calculate_accuracy: False
 
 save_mat: True
-mat_save_path: "/home/justin/code/deep-contact-estimator/inference_results/0914_5-short_network_data.mat"
+# mat_save_path: "/home/justin/code/deep-contact-estimator/inference_results/0914_5-short_network_data.mat"
+mat_save_path: "/home/zh/data/contact_data/sidewalk/mat/sidewalk_saved.mat"
 
 save_lcm: True
-lcm_save_path: "/home/justin/code/deep-contact-estimator/inference_results/0914_5-short_network_data.lcm"
+# lcm_save_path: "/home/justin/code/deep-contact-estimator/inference_results/0914_5-short_network_data.lcm"
+lcm_save_path: "/home/zh/data/contact_data/sidewalk/mat/sidewalk_saved.lcm"
 
 

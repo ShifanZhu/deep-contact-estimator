@@ -61,7 +61,10 @@ def mat2numpy_one_seq(data_pth, save_pth):
         contacts = raw_data['contacts']
         q = raw_data['q']
         p = raw_data['p']
+        print("p shape: ", p[0].shape)
+        print("p[0]: ", p[10000])
         qd = raw_data['qd']
+        print("p[0]: ", qd[10000])
         v = raw_data['v']
         acc = raw_data['imu_acc']
         omega = raw_data['imu_omega']
@@ -252,7 +255,7 @@ def main():
     parser.add_argument('--config_name', type=str, default=os.path.dirname(os.path.abspath(__file__))+'/../config/mat2numpy_config.yaml')
     args = parser.parse_args()
 
-    config = yaml.load(open(args.config_name))
+    config = yaml.load(open(args.config_name), Loader=yaml.FullLoader)
 
     if config['mode']=='train':
         mat2numpy_split(config['mat_folder'],config['save_path'],config['train_ratio'],config['val_ratio'])
